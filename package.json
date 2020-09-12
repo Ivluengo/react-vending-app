@@ -1,0 +1,11 @@
+{
+  "name": "examen-dexxma",
+  "version": "1.0.0",
+  "description": "Ejercicio de prueba para puesto de trabajo en Dexma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Luengo",
+  "license": "ISC"
+}
