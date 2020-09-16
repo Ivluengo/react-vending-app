@@ -6,11 +6,8 @@ const Coin = styled.img`
   cursor: pointer;
 `;
 
-export default function CoinButton( {coinValue, coinImg, coinSize, handleInsertCoin} ) {
+export default function CoinButton( {coinValue, coinImg, coinName, coinSize, handleInsertCoin} ) {
   return (
-    <>
-      <Coin src={coinImg} coinSize={coinSize} onClick={() => handleInsertCoin(coinValue)}/>
-    </>  
-      
-  )
+      <Coin src={coinImg} coinSize={coinSize} onClick={() => handleInsertCoin(coinValue, coinName)}/>
+   )
 }
