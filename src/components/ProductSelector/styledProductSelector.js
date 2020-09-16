@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 const ProductSelectorBox = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   margin: 0 0 2em;
 `;
 
@@ -19,15 +19,17 @@ const animateTitle = keyframes`
 `;
 
 const StepTitle = styled.h2`
+  animation: ${ animateTitle } 1s infinite ease-in-out;
   height: 25px;
-  animation: ${animateTitle} 1s infinite ease-in-out;
+
   &.stepTwo::after {
     background-color: #e96969;
     content: '';
-    display: ${(props) => (props.children ? 'block' : 'none')};
+    display: ${ (props) => ( props.children ? 'block' : 'none' ) };
     height: 2px;
     margin: 0 auto;
-    width: 400px;
+    min-width: 300px;
+    width: 50vw;
   }
 `;
 

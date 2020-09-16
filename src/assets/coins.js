@@ -1,4 +1,4 @@
-import {v4 as uuidv4} from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 
 import coin2 from '../assets/img/coin2.png';
 import coin1 from '../assets/img/coin1.png';
@@ -12,34 +12,34 @@ export const coins = [
       coinValue: 2,
       coinImg: coin2,
       coinName: "two",
-      coinSize: 15,
+      coinSize: 100,
    },
    {
       id: uuidv4(),
       coinValue: 1,
       coinImg: coin1,
       coinName: "one",
-      coinSize: 12,
+      coinSize: 80,
    },
    {
       id: uuidv4(),
       coinValue: 0.5,
       coinImg: coin50,
       coinName: "fifty",
-      coinSize: 14,
+      coinSize: 90,
    },
    {
       id: uuidv4(),
       coinValue: 0.2,
       coinImg: coin20,
       coinName: "twenty",
-      coinSize: 10,
+      coinSize: 70,
    },
    {
       id: uuidv4(),
       coinValue: 0.1,
       coinImg: coin10,
       coinName: "ten",
-      coinSize: 8,
+      coinSize: 60,
    },
 ];

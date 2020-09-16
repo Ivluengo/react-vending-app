@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const HeaderBox = styled.div`
+const HeaderBox = styled.div`
   align-items: center;
   background-color: #e96969;
   display: flex;
@@ -16,4 +16,19 @@ export const HeaderBox = styled.div`
     font-weight: 300;
     margin: 0px;
   }
+  @media only screen and (max-width: 500px) {
+    justify-content: flex-start;
+    & h1 {
+      padding-left: 1em;
+    }
+  }
 `;
+
+const LoginButton = styled.button`
+  border: 2px solid #ffffff;
+  color: #ffffff;  
+  position: fixed;
+  right: 1.5em;  
+`;
+
+export { HeaderBox, LoginButton }

@@ -7,11 +7,13 @@ const CoinManagerBox = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 70px auto 1.5em;
-  max-width: 800px;
+  max-width: 600px;
   padding-bottom: 2em;
   width: 85vw;
-  & h2 {
+  & .stepOne {
     flex: 100%;
+  }
+  & h2 {
     position: relative;
 
     &.stepOne::after {
@@ -20,22 +22,29 @@ const CoinManagerBox = styled.div`
       display: block;
       height: 2px;
       margin: 0 auto;
-      width: 400px;
+      min-width: 250px;
+      width: 50vw;
     }
   }
-  & .amountBox {
+  & .allCoinsBox {
     display: flex;
+    justify-content: center;
+  }
+
+  & .amountBox {
     align-items: center;
+    display: flex;
+    flex: 100%;
+    justify-content: center;
+    & h2 {
+      font-size: 1.5em;
+    }
   }
 `;
 
 const RefundButton = styled.button`
   border: 2px solid #e96969;
-  padding: 0.5em;
-  background-color: transparent;
-  border-radius: 3px;
   margin-left: 1.5em;
-  cursor: pointer;
 `;
 
 export { CoinManagerBox, RefundButton };
