@@ -18,7 +18,7 @@ export default function ProductSelector( { stock, insertedAmount, handleProductC
                      productImg={ productImg }
                      productName={ productName }
                      productDesc={ productDesc }
-                     productStock={ stock [productName]}
+                     productStock={ stock[productName]}
                      enabled={ productValue  <= insertedAmount && stock[productName] > 0 ? true : false }
                      handleProductClick={ handleProductClick }
                      isLogged={ isLogged }
