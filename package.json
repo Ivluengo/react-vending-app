@@ -1,6 +1,7 @@
 {
   "name": "examen-dexma",
   "description": "Ejercicio de prueba para puesto de trabajo en Dexma",
+  "homepage": "https://vendingapp.ivan-luengo.com",
   "author": "Ivan Luengo",
   "version": "0.1.0",
   "private": true,
